@@ -10,6 +10,7 @@ Tertiary Color (Ivory): #F5F5F5;
 
 header {
   background-color: #ffffff;
+  padding: 10px 0 4px;
   position: fixed;
   top: 0px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
@@ -228,6 +229,10 @@ nav > ul > li {
 display: inline-block;
 }
 
+nav > ul {
+  margin: 1em 0;
+}
+
 .navtoggle li:not(:last-child) {
   display: inline-block;
 }
@@ -236,17 +241,12 @@ display: inline-block;
   display: none;
 }
 
-nav > ul {
-  margin: 1em 0;
-}
-
 nav {
 width: auto;
 float: right;
 margin-top: 4px;
  }
 
- }
  .col-md-6 {
    width: 50%;
  }
