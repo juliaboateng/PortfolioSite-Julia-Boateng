@@ -87,6 +87,9 @@ body {
   .navtoggle li:not(:last-child) {
   display: none;
 }
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
 
   .button.CV {
     background-color: #F8DCC1;
