@@ -9,14 +9,10 @@ Tertiary Color (Ivory): #F5F5F5;
 }
 header {
   background-color: #ffffff;
-  text-align: center;
-  margin-top: 0px;
-  margin-bottom: 0px
-}
-  header {
-    top: 0px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-    width: 100%;
+  position: fixed;
+  top: 0px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  width: 100%;
 }
 
 img {
@@ -88,6 +84,9 @@ body {
     color: #00000;
     opacity: 0.8;
   }
+  .navtoggle li:not(:last-child) {
+  display: none;
+}
 
   .button.CV {
     background-color: #F8DCC1;
@@ -101,6 +100,15 @@ body {
     transition-duration: 0.2s;
     transition-property: opacity;
   }
+  .center {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height:50%;
+}
+#spline {text-align: center;}
+#para {text-align: center;}
 
   .button.CV:hover {
     background-color: #000000;
@@ -108,7 +116,9 @@ body {
     opacity: 0.8;
   }
 
-
+.welcome {
+  margin-top: 200px;
+}
   /* layout styling */
   .container {
   padding: 0 15px;
@@ -140,14 +150,6 @@ body {
 .logo {
   max-width: 250px;
 }
-nav > ul > li {
-  display: inline-block;
-  list-style-type: none;
-  padding: 0 15px;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #00000;
-}
 nav > ul > li:hover{
   color: #4a4a4a;
 }
@@ -170,15 +172,33 @@ nav > ul > li:hover{
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 641px) {
+}
   header {
       text-align: unset;
       padding: 10px 0 8px;
     }
+    nav > ul > li {
+      display: inline-block;
+      list-style-type: none;
+      padding: 0 15px;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: #00000;
+    }
+
+.navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+
+.navtoggle li:last-child {
+  display: none;
+}
     nav {
    width: auto;
    float: right;
    margin-top: 4px;
+ }
  }
  .col-md-6 {
    width: 50%;
