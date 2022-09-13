@@ -212,7 +212,8 @@ margin-bottom: 90px
 }
 
 .logo {
-  max-width: 250px;
+  height:80px;
+  width: auto;
 }
 .userflow {
   width: 767px;
@@ -253,7 +254,8 @@ Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 641px) {
 .logo {
-  max-width: 150px;
+  height: 80px;
+  width: auto;
 }
 
 nav {
